@@ -1,4 +1,4 @@
-package Time;
+package class1;
 
 import java.util.Scanner;
 
@@ -38,7 +38,7 @@ public class Time {
         this.seconds = seconds;
     }
 
-    public int allseconds()
+    public int allSeconds()
     {
         a = this.hours*3600 + this.minutes*60 + this.seconds;
         return this.hours*3600 + this.minutes*60 + this.seconds;
@@ -57,7 +57,7 @@ public class Time {
         System.out.println("Введите часы");
         int hours = sc.nextInt();
         Time fullTime = new Time(seconds, minutes, hours);
-        System.out.println("Общее количество секунд = "  +  fullTime.allseconds());
+        System.out.println("Общее количество секунд = "  +  fullTime.allSeconds());
         System.out.println( "Нормальное число секунд =  " + fullTime.metod2());
         System.out.println( "Нормальное число минут =  " + fullTime.metod1());
         System.out.println( "Нормальное число часов =  " + fullTime.metod());
